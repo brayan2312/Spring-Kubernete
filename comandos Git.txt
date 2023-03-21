@@ -1,0 +1,38 @@
+git remote -v // Para ver el repositorio
+
+#BAJAR INFO
+***********************************************************************
+git init
+git fetch // El comando git fetch comunica con un repositorio remoto y obtiene toda la información que se encuentra en ese repositorio que no está en el tuyo actual y la almacena en tu base de datos local.
+
+//git push opc
+
+git pull //El comando git pull es básicamente una combinación de los comandos git fetch y git merge, donde Git descargará desde el repositorio remoto especificado y a continuación, de forma inmediata intentará combinarlo en la rama en la que te encuentres.
+
+PRIMERA VEZ
+***************************************************************************************
+git init
+git add .
+git commit -m "comentario"
+
+git remote add origin https://github.com/brayan2312/Angular-Eureka.git
+git branch -M main
+git push -u origin main
+
+git tag -a v0.17.0 -m "comentario"
+git push --tags
+
+**********************************
+SUBIR CAMBIOS
+git init
+git add .
+git commit -m "comentario"
+git push
+---------------------------- 
+AGREGAR TAGS
+git tag // para ver los tags
+
+git tag -a v0.18.0 -m "comentario"
+git push --tags
+
+npm install
