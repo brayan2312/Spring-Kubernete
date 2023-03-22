@@ -1,6 +1,7 @@
 package org.brayan.springcloud.msvc.usuarios.models.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.*;
 
 @Entity
 @Table( name = "usuarios")
@@ -8,12 +9,13 @@ public class Usuario {
     @Id
     @GeneratedValue( strategy = GenerationType.IDENTITY)
     private Long Id;
-
+    @NotBlank
     private String nombre;
-
+    @NotEmpty
+    @Email
     @Column( unique = true)
     private String email;
-
+    @NotBlank
     private String password;
 
     public Long getId() {
